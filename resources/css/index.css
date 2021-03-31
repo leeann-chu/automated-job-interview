@@ -60,11 +60,17 @@ a.faded {
     vertical-align: center;
     padding-top: 4px;
     padding-bottom: 4px;
-    color: rgb(232, 230, 227);
+    color: rgb(211, 213, 214);
     background-color: darkblue;
     text-decoration: none;
 }
 
 .button:hover {
+    color: white;
     background-color: rgb(29, 81, 177);
+    filter: drop-shadow(1px 1px 1px grey)
+}
+
+.video {
+    border: 2px solid black;
 }
