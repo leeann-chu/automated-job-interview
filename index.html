@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -21,23 +22,30 @@
       </ul>
     </nav>
     <br>
-      <div class="left">
-        <div id="startButton" class="button">Start</div>
-          <h2>Preview</h2>
-          <video id="preview" width="160" height="120" autoplay="" muted=""></video>
-      </div>
+    <!-- Video Panel -->
+    <div class="headings">
+      <ul>Preview</ul>
+      <ul>Recording</ul>
+    </div>
+    <div class="videoPanel">
+      <video id="preview" width="160" height="120" autoplay="" muted=""></video>
+      <video id="recording" width="160" height="120" controls=""></video>
+    </div>
 
-      <div class="right">
-        <div id="stopButton" class="button">Stop</div>
-          <h2>Recording</h2>
-          <video id="recording" width="160" height="120" controls=""></video>
-          <a id="downloadButton" class="button">Download</a>
-      </div>
+    <div id="spacing"></div>
 
-      <div class="bottom">
-        <pre id="log"></pre>
-      </div>
+    <!-- Button Bar -->
+    <div class="buttonBar">
+      <div id="startButton" class="button">Start</div>
+      <div id="stopButton" class="button">Stop</div>
+      <a id="downloadButton" class="button">Download</a>
+    </div>
 
-      <script src="localhost.js"></script>
-      </body>
+    <div class="bottom">
+      <pre id="log"></pre>
+    </div>
+
+    <script src="localhost.js"></script>
+  </body>
+
 </html>
